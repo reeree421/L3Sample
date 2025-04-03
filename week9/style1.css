@@ -1,0 +1,97 @@
+/* Container */
+.container {
+    position: relative;
+    width: 400px;
+    height: 230px;
+    border: 3px solid black; /* Bold Border for the Whole Layout */
+    padding: 5px; /* Add some spacing inside */
+    background-color: #ffffe0; /* Light yellow background like in your image */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribute columns evenly */
+    width: 100%;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 2px solid black;
+}
+
+.header div {
+    flex: 1; /* Make each column equal width */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 2px solid black;
+}
+
+/* Remove the border from the last header column */
+.header div:last-child {
+    border-right: none;
+}
+
+/* First Column */
+.first-column {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 42%;
+    height: 165px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* Second Column */
+.second-column {
+    position: absolute;
+    top: 45px;
+    left: 48%;
+    width: 25%;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+/* Third Column */
+.third-column {
+    position: absolute;
+    top: 45px;
+    left: 73.5%;
+    width: 25%;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+/* Spanning Green Box */
+.fourth-column {
+    position: absolute;
+    top: 100px;
+    left: 48%;
+    width: 45.5%;
+    height: 110px;
+    background-color: green;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* List Styling */
+ol, ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 0;
+}
